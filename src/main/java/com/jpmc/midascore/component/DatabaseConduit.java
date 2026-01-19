@@ -1,19 +1,32 @@
 package com.jpmc.midascore.component;
 
+import com.jpmc.midascore.entity.TransactionRecord;
 import com.jpmc.midascore.entity.UserRecord;
+import com.jpmc.midascore.repository.TransactionRepository;
 import com.jpmc.midascore.repository.UserRepository;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DatabaseConduit {
     private final UserRepository userRepository;
+    private final TransactionRepository transactionRepository;
 
-    public DatabaseConduit(UserRepository userRepository) {
+    public DatabaseConduit(UserRepository userRepository, TransactionRepository transactionRepository) {
         this.userRepository = userRepository;
+        this.transactionRepository = transactionRepository;
     }
 
-    public void save(UserRecord userRecord) {
-        userRepository.save(userRecord);
+    public UserRecord findById(long id) {
+        return userRepository.findById(id);
     }
 
+    // DIESE METHODE FEHLT WAHRSCHEINLICH:
+    public void saveUser(UserRecord user) {
+        userRepository.save(user);
+    }
+
+    // UND DIESE FÜR DIE TRANSAKTIONEN:
+    public void saveTransaction(TransactionRecord transaction) {
+        transactionRepository.save(transaction);
+    }
 }
