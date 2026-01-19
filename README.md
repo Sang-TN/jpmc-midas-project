@@ -13,7 +13,7 @@ This repository contains my completed solution for the **J.P. Morgan Chase Softw
     * Developed a custom **REST API** endpoint (`/balance`) to expose user balances.
     * Configured the application to run on a specific port (33400) as required by the simulation's specifications.
 
-## 🛠 Tech Stack
+##  Tech Stack
 * **Language:** Java 17
 * **Framework:** Spring Boot 3
 * **Messaging:** Apache Kafka
@@ -21,7 +21,7 @@ This repository contains my completed solution for the **J.P. Morgan Chase Softw
 * **Integration:** RestTemplate (JSON POST/GET)
 * **Tools:** Maven, Git, IntelliJ IDEA
 
-## ⚙️ How to Run
+##  How to Run
 1. Ensure a Kafka broker is running on `localhost:9092`.
 2. Start the external incentive API provided in the `services/` folder.
 3. Run `MidasCoreApplication.java` or use `mvn spring-boot:run`.
