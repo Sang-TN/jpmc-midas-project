@@ -52,7 +52,7 @@ public class TaskThreeTests {
 
         logger.info("----------------------------------------------------------");
 
-        // Der Test bleibt kurz offen, damit du die Zahl lesen kannst
+
         Thread.sleep(10000);
     }
 }

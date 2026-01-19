@@ -20,12 +20,10 @@ public class DatabaseConduit {
         return userRepository.findById(id);
     }
 
-    // DIESE METHODE FEHLT WAHRSCHEINLICH:
     public void saveUser(UserRecord user) {
         userRepository.save(user);
     }
 
-    // UND DIESE FÜR DIE TRANSAKTIONEN:
     public void saveTransaction(TransactionRecord transaction) {
         transactionRepository.save(transaction);
     }

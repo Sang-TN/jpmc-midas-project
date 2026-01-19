@@ -26,6 +26,5 @@ public class UserPopulator {
             UserRecord user = new UserRecord(userData[0], Float.parseFloat(userData[1]));
             databaseConduit.saveUser(user);
         }
-        System.err.println("✅ ERFOLG: Alle User wurden manuell geladen!");
     }
 }

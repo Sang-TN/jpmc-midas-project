@@ -3,7 +3,7 @@ package com.jpmc.midascore.foundation;
 public class Incentive {
     private float amount;
 
-    // Standard-Konstruktor (wichtig für die API)
+    // Standard-Konstruktor
     public Incentive() {}
 
     public Incentive(float amount) {
